@@ -36,9 +36,36 @@ function updateStock(existingStock,quantityUpdate){
 
 
 updateStock("Mango",9)
+updateStock("Guava", 0)
 
 //Write a function to calculate the total number of items in the inventory.
+// let sum = 0
 
+function totalNumber(){
+    for(let i = 0; i<=stockQuantities.length; i++){
+        let sum = 0;
+        sum += stockQuantities[i];
+        
+    }
+    // console.log(sum);
+  //  return sum;
+}
+console.log(totalNumber());
+
+
+// Write a function to find the item with the lowest stock quantity.
+function findtheLowest(){
+    let lowest = stockQuantities[0];
+    let item = 0;
+    for(let i = 1; i < stockQuantities.length; i++){
+        if(stockQuantities[i] < lowest){
+            lowest = stockQuantities[i];
+            index = i;
+        }
+    }
+    return  groceryItems[item];
+}
+console.log(findtheLowest());
 
 
 
