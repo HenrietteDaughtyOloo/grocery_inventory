@@ -26,13 +26,19 @@ const groceryItems = ["Mango", "Guava", "Mangosteen", "Lettuce", "Kales", "Carro
 function updateStock(existingStock,quantityUpdate){
     for(let i = 0; i<= groceryItems.length; i++){
         let d = groceryItems.indexOf(existingStock)
-        if(stockQuantities[i]===d){
-            stockQuantities.splice(d, 1, quantityUpdate);
-            console.log(stockQuantities);
+        
+       if(d===stockQuantities[i]){
+        console.log("nine")}
+           stockQuantities.splice(d, 1, quantityUpdate);
+           console.log(stockQuantities);
         }
-    }
-}
-updateStock("Mango",1)
+     }
+
+
+updateStock("Mango",9)
+
+//Write a function to calculate the total number of items in the inventory.
+
 
 
 
